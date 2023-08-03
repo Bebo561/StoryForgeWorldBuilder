@@ -1,11 +1,29 @@
 import React from "react";
 import './Styles/StartPage.css'
+import { useEffect, useState } from 'react'
+import Header from "./Header";
 import { useNavigate } from "react-router-dom";
-import { signInWithPopup  } from 'firebase/auth';
+import { signInWithPopup, getAuth  } from 'firebase/auth';
 import { auth, provider} from '../Firebase'
 
 export default function Start(){
     var nav = useNavigate();
+    const checkAuth = getAuth();
+    const [user, setUser] = useState(null);
+
+    //If the user is already logged in, redirect to homepage.
+    useEffect(() =>{
+        const unsubscribe = checkAuth.onAuthStateChanged((user) => {
+            setUser(user);
+            if (user !== null) {
+              nav('/Home');
+            }
+          });
+      
+          return () => unsubscribe();
+    }, [])
+
+
     const GoogleSignIn = (event: React.MouseEvent<HTMLButtonElement>) =>{
         event?.preventDefault();
         //Open a pop up tab that allows users to sign in with user accounts
@@ -13,6 +31,7 @@ export default function Start(){
             //Use the google account displayName as the account name.
             const Email = res.user.email;
             const uid = res.user.uid;
+            
             //If statement exists because typescript is unsure if user is null or not
             if(Email && uid){
                 //If the user does exist, set the users name in the storage to verify a user is logged in.
@@ -33,6 +52,7 @@ export default function Start(){
 
     return (
         <React.Fragment>
+            <Header></Header>
             <div id="StartBG">
                 <div id ="StartContainer">
                     <div id="StartHalfOne" className="StartHalves">

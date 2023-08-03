@@ -1,5 +1,6 @@
 import './Styles/Login.css'
 import { useNavigate } from 'react-router-dom';
+import Header from './Header';
 import {useState} from 'react'
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../Firebase'
@@ -34,6 +35,7 @@ export default function RegisterPage(){
     }
     return (
         <>
+        <Header></Header>
             <div id="LoginBG">
                 <form id="LoginForm" onSubmit={RegisterEvent}>
                     <h1 id="LoginBack" onClick={BackButton}>Back</h1>

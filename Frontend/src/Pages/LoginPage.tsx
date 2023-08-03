@@ -1,5 +1,6 @@
 import './Styles/Login.css'
 import React from "react";
+import Header from './Header'
 import {useState} from 'react'
 import {useNavigate} from 'react-router-dom'
 import {signInWithEmailAndPassword} from 'firebase/auth' 
@@ -44,6 +45,7 @@ export default function LoginPage(){
 
     return (
         <React.Fragment>
+            <Header></Header>
             <div id="LoginBG">
                 <form id="LoginForm" onSubmit={LoginSubmit}>
                     <h1 id="LoginBack" onClick={BackButton}>Back</h1>
