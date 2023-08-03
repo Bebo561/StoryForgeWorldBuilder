@@ -13,10 +13,11 @@ export default function HomePage(){
     //If the user is already logged in, if not, redirect ot login.
     useEffect(() =>{
         const unsubscribe = auth.onAuthStateChanged((user) => {
-            setUser(user);
+            setUser(user?);
             if (user === null) {
               nav('/');
             }
+            //If user is valid, generate authentication token.
             user?.getIdToken().then((token) => {
                 alert(token)
                 dispatch(setToken(token))
