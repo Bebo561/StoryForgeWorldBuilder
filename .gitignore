@@ -1,5 +1,6 @@
 *.vscode*
 *node_modules*
+*Firebase.tsx*
 # Logs
 logs
 *.log

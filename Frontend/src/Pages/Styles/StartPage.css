@@ -1,0 +1,87 @@
+#LoginBG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+#LoginContainer {
+    display: flex;
+    width: 50vw;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); 
+}
+.LoginHalves {
+    flex: 1;
+    height: 65vh; 
+    width: 25vw;
+}
+#LoginHalfOne {
+    background-color: #82b0ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#LoginHalfOne p{
+    font-size: 1.1rem;
+    color: #333333;
+}
+#LoginHalfTwo {
+    background-color: #f2f2f2;
+    display: flex;
+    color: #333333;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+#LoginHalfTwo h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#LoginHalfTwo p{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+#LoginAsk{
+    font-size: 2.5rem;
+    color: #f2f2f2;
+    font-weight: 100;
+}
+#GoogleLogin{
+    height: 5vh;
+    width: 10vw;
+    background-color: #417ee8;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 6px;
+}
+#GoogleLogo{
+    height: 4vh;
+    fill: #417ee8; 
+    vertical-align: middle;
+    width: 2vw;
+}
+#GoogleLogin:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+    background-color: #4a86ed;
+}
+#EmailLogin{
+    height: 5vh;
+    width: 10vw;
+    background-color: #44484f;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+#EmailLogin:hover{
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #565c66;
+}
