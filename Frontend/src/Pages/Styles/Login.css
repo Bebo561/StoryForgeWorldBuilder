@@ -1,0 +1,116 @@
+#LoginBG{
+    background: linear-gradient(to bottom, #5c8de0, white);
+    height: 90vh;
+    width: 100vw;
+    margin-top: 10vh;
+    top: 0;
+    left: 0; 
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#LoginBack{
+    position: absolute;
+    margin-top: -62vh;
+    margin-left: -34vw;
+    font-size: 1.5rem;
+}
+#LoginBack:hover{
+    cursor:pointer;
+    color: blue;
+}
+#LoginForm{
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: -5vh;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); 
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 70vh;
+}
+#LoginHeader{
+    color: #333333;
+    margin-top: -7vh;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.LoginInput{
+    width: 12vw;
+    height: 3vh;
+    border-radius: 4px;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    color: black;
+    padding: 5px; 
+    font-size: 1rem;
+    background-color: white;
+}
+.LoginInput:focus{
+    outline: black;
+    caret-color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+    transition: 0.3s ease;
+}
+.LoginLabels{
+    font-size: 1.5rem;
+    align-self: flex-start;
+    margin-left: 13.8vw;
+    font-weight: 300;
+}
+#LoginButton{
+    background-color: blue;
+    color: white;
+    margin-top: 1vh;
+    border: none;
+    height: 5vh;
+    width: 12vw;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#LoginButton:hover{
+    border: white;
+    cursor: pointer;
+    background-color: #3474e3;
+    transition: 0.3s all;
+}
+#LoginForm p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+#RegisterRedirect{
+    height: 4vh;
+    width: 12vw;
+    background-color:  #44484f;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#RegisterRedirect:hover{
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #565c66;
+}
+#RegisterButton{
+    background-color: #26ab56;
+    color: white;
+    margin-top: 1vh;
+    border: none;
+    height: 5vh;
+    width: 12vw;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+#RegisterButton:hover{
+    background-color: #28c963;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
