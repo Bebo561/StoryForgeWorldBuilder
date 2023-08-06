@@ -16,7 +16,7 @@ export default function Start(){
         const unsubscribe = checkAuth.onAuthStateChanged((user) => {
             setUser(user);
             if (user !== null) {
-              nav('/Home');
+                nav('/Home');
             }
           });
       

@@ -1,0 +1,15 @@
+#HomeBG{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10.1vh;
+    background: linear-gradient(to right, #5c8de0, #1a2980);
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#HomeBG h1{
+    color: black;
+}

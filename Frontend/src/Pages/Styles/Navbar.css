@@ -1,0 +1,48 @@
+nav{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: black;
+    height: 10vh;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+nav h1 {
+    margin-left: 1vw;
+    font-size: 1.5rem;
+}
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: -6.1vh;
+    padding: 0;
+}
+ul li {
+    margin-right: 20px;
+}
+ul li:first-child{
+    margin-left: 18vw;
+}  
+ul li:last-child {
+    margin-right: 0;
+}
+  
+ ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+  
+ul li a:hover {
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.isActive{
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+    text-decoration-offset: 1rem;
+}
