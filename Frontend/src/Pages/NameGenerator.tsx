@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 
 export default function NameGenerator(){
     var [excludedRaces, updateExcludedRaces] = useState<string[]>([]);
+    var [nameInputs, updateNameInputs] = useState('');
 
     const onCheckBox = (event: React.ChangeEvent<HTMLInputElement>) => {
         var option = event.target.value;
@@ -174,7 +175,10 @@ export default function NameGenerator(){
                             <label htmlFor="Loxodon" id="CheckboxLabel">Loxodon</label>
                         </div>
                     </div>
-                    
+                    <label id="NameInputLabel">Additional Inputs</label>
+                    <p id="NameInputLabelHelper">(What should be considered when generating the name)</p>
+                    <input type="text" id="NameInput" placeholder="Villain, Hero, Emperor, etc.." onChange={(e) => updateNameInputs(e.target.value)}></input>
+                    <button id="NameButton">Generate</button>
                 </div>
             </div>
         </>
