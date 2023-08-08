@@ -4,6 +4,8 @@ import Start from './Pages/StartPage.tsx'
 import HomePage from './Pages/HomePage.tsx'
 import LoginPage from './Pages/LoginPage.tsx'
 import RegisterPage from './Pages/RegisterPage.tsx'
+import AboutUs from './Pages/AboutUs.tsx'
+import NameGenerator from './Pages/NameGenerator.tsx'
 
 function App() {
 
@@ -11,7 +13,11 @@ function App() {
     <React.Fragment>
       <Routes>
         <Route path = '/' element={<Start/>}/>
-        <Route path ='/Home' element={<HomePage/>}/>
+        <Route path ='/Home' element={<HomePage/>}>
+          <Route index element={<AboutUs />} />
+          <Route path="AboutUs" element={<AboutUs />} />
+          <Route path="Name" element={<NameGenerator />} />
+        </Route>
         <Route path ='/EmailLogin' element={<LoginPage/>}/>
         <Route path = '/Register' element={<RegisterPage/>}/>
       </Routes>

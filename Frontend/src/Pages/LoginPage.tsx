@@ -35,9 +35,8 @@ export default function LoginPage(){
                 localStorage.setItem("Email", Email);
                 localStorage.setItem("uid", uid);
                 //Navigate to home page.
-                nav('/Home');
+                nav('/Home/AboutUs');
             }     
-            nav('/home');
         }).catch((error) => {
             alert(error.message)
         })

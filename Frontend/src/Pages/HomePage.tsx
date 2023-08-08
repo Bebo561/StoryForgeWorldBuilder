@@ -2,10 +2,11 @@ import {useState, useEffect} from 'react'
 import { getAuth } from 'firebase/auth';
 import { useNavigate } from'react-router-dom';
 import React from 'react'
-import {Routes, Route} from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import { setToken } from './redux/actions';
 import NameGenerator from './NameGenerator';
+import AboutUs from './AboutUs';
 import Navbar from './Navbar';
 
 export default function HomePage(){
@@ -34,11 +35,7 @@ export default function HomePage(){
     return (
         <>
         <Navbar></Navbar>
-            <React.Fragment>
-                <Routes>
-                    <Route path = '/' element={<NameGenerator/>}/>
-                </Routes>
-            </React.Fragment>
+        <Outlet />
         </>
     )
 }

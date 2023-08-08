@@ -1,0 +1,27 @@
+#AboutUsContainer{
+    height: 60vh;
+    width: 70vw;
+}
+#AboutUsContainer h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+#AboutUsContainer p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#AboutUsStartNow{
+    height: 5vh;
+    width: 7vw;
+    position: absolute;
+    margin-top: 40vh;
+    background-color: #5c8de0;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+#AboutUsStartNow:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+    background-color: #6c8de0;
+}
