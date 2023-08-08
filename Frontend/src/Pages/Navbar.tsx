@@ -12,14 +12,14 @@ export default function Navbar(){
 
     return (
         <>
-            <nav className={menuOpen ? 'menuOpen' : ''}>
+            <nav className={menuOpen ? 'menuOpen' : 'menuClose'}>
                 <h1>World Forger: A DnD Generator</h1>
                 <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                     <div className="bar"></div>
                     <div className="bar"></div>
                     <div className="bar"></div>
                 </div>
-                <ul>
+                <ul className={menuOpen ? 'Show' : 'noShow'}> 
                     <li className={isActive('/Home/AboutUs')}><Link to="/">About Us</Link></li>
                     <li className={isActive('/Home/Name')}><Link to="Name">Name</Link></li>
                     <li className={isActive('/Home/Race')}><Link to="/">Race</Link></li>
