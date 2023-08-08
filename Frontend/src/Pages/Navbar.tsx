@@ -1,8 +1,10 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import './Styles/Navbar.css'
 
 export default function Navbar(){
     const location = useLocation();
+    const [menuOpen, setMenuOpen] = useState(false);
 
     const isActive = (pathname: string) => {
         return location.pathname === pathname ? 'isActive' : '';
@@ -10,8 +12,13 @@ export default function Navbar(){
 
     return (
         <>
-            <nav>
+            <nav className={menuOpen ? 'menuOpen' : ''}>
                 <h1>World Forger: A DnD Generator</h1>
+                <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                    <div className="bar"></div>
+                </div>
                 <ul>
                     <li className={isActive('/Home/AboutUs')}><Link to="/">About Us</Link></li>
                     <li className={isActive('/Home/Name')}><Link to="Name">Name</Link></li>
