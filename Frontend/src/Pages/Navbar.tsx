@@ -4,7 +4,7 @@ import './Styles/Navbar.css'
 export default function Navbar(){
     const location = useLocation();
 
-    const isActive = (pathname) => {
+    const isActive = (pathname: string) => {
         return location.pathname === pathname ? 'isActive' : '';
     };
 

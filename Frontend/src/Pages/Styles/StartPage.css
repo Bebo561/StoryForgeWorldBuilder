@@ -85,3 +85,19 @@
     transition: 0.3s ease;
     background-color: #565c66;
 }
+
+@media(max-width: 480px){
+    #StartContainer{
+        width: 90vw;
+    }
+    #GoogleLogin{
+        width: 25vw;
+    }
+    #EmailLogin{
+        width: 25vw;
+    }
+    #GoogleLogo{
+        height: 5vh;
+        width: 8vw;
+    }
+}

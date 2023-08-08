@@ -25,3 +25,14 @@
     transition: 0.3s all;
     background-color: #6c8de0;
 }
+@media(max-width: 480px){
+    #AboutUsContainer{
+        margin-top: -35vh;
+    }
+    #AboutUsContainer p{
+        font-size: 1rem;
+    }
+    #AboutUsStartNow{
+        width: 25vw;
+    }
+}

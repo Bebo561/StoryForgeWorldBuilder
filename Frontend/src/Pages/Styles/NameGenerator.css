@@ -1,0 +1,57 @@
+#NameForm{
+    height: 70vh;
+    width: 35vw;
+    border: 2px solid black;
+    background-color: white;
+    margin-top: 5vh;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#NameHeader{
+    position: absolute;
+    margin-bottom: 80vh;
+    font-size: 3rem;
+    color: white;
+}
+#NameFormHeader{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+#CheckboxHolder{
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-top: 5vh;
+    margin-top: -2vh;
+    color: black;
+    height: 40vh;
+    align-items: flex-start;
+    width: 15vw;
+}
+.CheckboxOptions{
+    margin-left: 5vh;
+    margin-top: 1vh;
+}
+#CheckboxLabel{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+@media(max-width: 480px){
+    #NameForm{
+        width: 90vw;
+        height: 60vh;
+        margin-top: -20vh;
+    }
+    #NameHeader{
+        margin-top: -10vh;
+        font-size: 2rem;
+    }
+    #CheckboxHolder{
+        width: 60vw;
+    }
+}

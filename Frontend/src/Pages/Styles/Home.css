@@ -10,6 +10,8 @@
     justify-content: center;
     align-items: center;
 }
-#HomeBG h1{
-    color: black;
+@media(max-width: 480px){
+    #HomeBG{
+        height: 100vh;
+    }
 }

@@ -114,3 +114,26 @@
     cursor: pointer;
     transition: 0.3s ease;
 }
+@media(max-width: 480px){
+    #RegisterButton{
+        width: 25vw;
+    }
+    #LoginButton{
+        width: 25vw;
+    }
+    #RegisterRedirect{
+        width: 25vw;
+    }
+    #LoginForm{
+        width: 90vw;
+    }
+    .LoginInput{
+        width: 50vw;
+    }
+    .LoginLabels{
+        margin-left: 18vw;
+    }
+    #LoginBack{
+        margin-left: -30vh;
+    }
+}

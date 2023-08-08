@@ -1,13 +1,11 @@
 import {useState, useEffect} from 'react'
 import { getAuth } from 'firebase/auth';
 import { useNavigate } from'react-router-dom';
-import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import { setToken } from './redux/actions';
-import NameGenerator from './NameGenerator';
-import AboutUs from './AboutUs';
 import Navbar from './Navbar';
+import './Styles/Home.css';
 
 export default function HomePage(){
     const auth = getAuth();
