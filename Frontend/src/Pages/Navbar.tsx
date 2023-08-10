@@ -23,7 +23,7 @@ export default function Navbar(){
                     <li className={isActive('/Home/AboutUs')}><Link to="/">About Us</Link></li>
                     <li className={isActive('/Home/Name')}><Link to="Name">Name</Link></li>
                     <li className={isActive('/Home/Race')}><Link to="Race">Race</Link></li>
-                    <li className={isActive('/Home/Class')}><Link to="/">Class</Link></li>
+                    <li className={isActive('/Home/Class')}><Link to="Class">Class</Link></li>
                     <li className={isActive('/Home/Stats')}><Link to="/">Stats</Link></li>
                     <li className={isActive('/Home/Story')}><Link to="/">Story</Link></li>
                 </ul>

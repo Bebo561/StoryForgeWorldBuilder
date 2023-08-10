@@ -1,0 +1,54 @@
+#ClassInput{
+    width: 15vw;
+    height: 3vh;
+    border-radius: 4px;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    color: black;
+    padding: 5px; 
+    font-size: 1rem;
+    background-color: white;
+}
+#PlayStyleDescription{
+    color: black;
+}
+#ClassRaceDescription{
+    color: black;
+    margin-top: -1vh;
+}
+#ClassRaceInput{
+    width: 15vw;
+    height: 3vh;
+    border-radius: 4px;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    color: black;
+    padding: 5px; 
+    font-size: 1rem;
+    background-color: white;
+}
+#ClassPageButton{
+    width: 10vw;
+    height: 4vh;
+    border: none;
+    background-color: blue;
+    border-radius: 4px;
+    margin-bottom: 1vh;
+    font-size: 1rem;
+}
+#ClassPageButton:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+    background-color: #4a86ed;
+}
+@media (max-width: 480px){
+    #ClassInput{
+        width: 35vw;
+    }
+    #ClassRaceInput{
+        width: 35vw;
+    }
+    #ClassPageButton{
+        width: 25vw;
+    }
+}
