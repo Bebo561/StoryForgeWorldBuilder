@@ -62,16 +62,12 @@ ul li a:hover {
         min-height: 10vh;
         width: 100%;
     }
-    body{
-        width: 100%;
-        overflow-x: hidden;
-    }
     nav h1 {
         margin-left: 2vw;
         font-size: 1.2rem;
     }
     .menuOpen{
-        transition: 0.3s ease;
+        transition: 0.1s ease;
         height: 35vh;
         z-index: 1;
         max-width: 100%;
@@ -91,7 +87,6 @@ ul li a:hover {
         display: flex;
         margin-top: -5vh;
         margin-left: 90vw;
-        z-index: 3;
     }
 
     ul li {

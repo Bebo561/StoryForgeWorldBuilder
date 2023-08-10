@@ -1,4 +1,4 @@
-#NameForm{
+#HomeForm{
     height: 70vh;
     width: 35vw;
     border: 2px solid black;
@@ -20,7 +20,7 @@
     font-size: 1.3rem;
     font-weight: 400;
 }
-#CheckboxHolder{
+#OptionsHolder{
     border: 1px solid black;
     border-radius: 4px;
     display: flex;
@@ -41,7 +41,7 @@
     font-size: 1.2rem;
     font-weight: 500;
 }
-#NameButton{
+#HomeButton{
     width: 10vw;
     height: 4vh;
     border: none;
@@ -50,7 +50,7 @@
     margin-top: 2vh;
     font-size: 1rem;
 }
-#NameButton:hover{
+#HomeButton:hover{
     cursor: pointer;
     transition: 0.3s all;
     background-color: #4a86ed;
@@ -79,7 +79,7 @@
     margin-top: -1vh;
 }
 @media(max-width: 480px){
-    #NameForm{
+    #HomeForm{
         width: 90vw;
         height: 65vh;
         margin-top: -20vh;
@@ -88,13 +88,13 @@
         margin-top: -10vh;
         font-size: 2rem;
     }
-    #CheckboxHolder{
+    #OptionsHolder{
         width: 60vw;
     }
     #NameInput{
         width: 35vw;
     }
-    #NameButton{
+    #HomeButton{
         width: 35vw;
         margin-top: -1vh;
     }

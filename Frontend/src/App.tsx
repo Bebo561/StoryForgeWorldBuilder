@@ -6,6 +6,7 @@ import LoginPage from './Pages/LoginPage.tsx'
 import RegisterPage from './Pages/RegisterPage.tsx'
 import AboutUs from './Pages/AboutUs.tsx'
 import NameGenerator from './Pages/NameGenerator.tsx'
+import RacePage from './Pages/RacePage.tsx'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<AboutUs />} />
           <Route path="AboutUs" element={<AboutUs />} />
           <Route path="Name" element={<NameGenerator />} />
+          <Route path="Race" element={<RacePage />} />
         </Route>
         <Route path ='/EmailLogin' element={<LoginPage/>}/>
         <Route path = '/Register' element={<RegisterPage/>}/>
