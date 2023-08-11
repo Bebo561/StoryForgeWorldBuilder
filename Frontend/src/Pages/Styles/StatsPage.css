@@ -1,0 +1,72 @@
+.Statsheader{
+    color: black;
+    weight: 700;
+    font-size: 1.5rem;
+}
+.StatsSelect{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+    border: none;
+    width: 15vw;
+    margin-top: -4vh;
+}
+#StatsInput{
+    width: 15vw;
+    height: 3vh;
+    border-radius: 4px;
+    margin-bottom: 2vh;
+    border: 1px solid black;
+    color: black;
+    padding: 5px; 
+    font-size: 1rem;
+    background-color: white;
+}
+#StatsButton{
+    width: 10vw;
+    height: 4vh;
+    border: none;
+    background-color: blue;
+    border-radius: 4px;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+    font-size: 1rem;
+}
+#StatsButton:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+    background-color: #4a86ed;
+}
+
+@media(max-width: 480px){
+    .StatsSelect{
+        width: 40vw;
+        font-size: 1.5rem;
+        margin-top: -3vh;
+    }
+    #StatsInput{
+        width: 45vw;
+    }
+    #StatsButton{
+        width: 25vw;
+    }
+    #StatsAlignmentSelect option{
+        margin-top: 30vh;
+        position: absolute;
+    }
+}
+@media(max-width: 375px){
+    .StatsSelect{
+        margin-top: -5vh;
+        height: 5vh;
+        width: 45vw;
+        font-size: 1.3rem;
+    }
+    #HomeHeaderHelper{
+        position: absolute;
+        margin-bottom: 15vh;
+    }
+}

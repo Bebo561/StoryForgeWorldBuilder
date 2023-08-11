@@ -14,18 +14,21 @@
 }
 #ClassRaceDescription{
     color: black;
-    margin-top: -1vh;
+    font-size: 1.3rem;
 }
-#ClassRaceInput{
-    width: 15vw;
-    height: 3vh;
-    border-radius: 4px;
-    margin-bottom: 2vh;
-    border: 1px solid black;
-    color: black;
-    padding: 5px; 
-    font-size: 1rem;
+#raceSelect{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
     background-color: white;
+    cursor: pointer;
+    color: black;
+    width: 10vw;
+    margin-top: -3vh;
+}
+.ClassPageRemove{
+    margin-top: 1vh;
 }
 #ClassPageButton{
     width: 10vw;
@@ -33,7 +36,8 @@
     border: none;
     background-color: blue;
     border-radius: 4px;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
     font-size: 1rem;
 }
 #ClassPageButton:hover{
@@ -51,4 +55,9 @@
     #ClassPageButton{
         width: 25vw;
     }
+    #raceSelect{
+        width: 35vw;
+        font-size: 1.3rem;
+    }
+      
 }
