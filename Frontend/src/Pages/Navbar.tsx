@@ -25,7 +25,7 @@ export default function Navbar(){
                     <li className={isActive('/Home/Race')}><Link to="Race">Race</Link></li>
                     <li className={isActive('/Home/Class')}><Link to="Class">Class</Link></li>
                     <li className={isActive('/Home/Stats')}><Link to="Stats">Stats</Link></li>
-                    <li className={isActive('/Home/Story')}><Link to="/">Story</Link></li>
+                    <li className={isActive('/Home/Story')}><Link to="Story">Story</Link></li>
                 </ul>
             </nav>
         </>

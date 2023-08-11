@@ -1,0 +1,57 @@
+.StoryInput{
+    width: 15vw;
+    height: 3vh;
+    border-radius: 4px;
+    border: 1px solid black;
+    color: black;
+    padding: 5px; 
+    font-size: 1rem;
+    background-color: white;
+}
+.StoryHeader{
+    color: black;
+    weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0vh;
+}
+#StoryButton{
+    width: 10vw;
+    height: 4vh;
+    border: none;
+    background-color: blue;
+    border-radius: 4px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    font-size: 1rem;
+}
+.StoryHeader:first-child{
+    margin-bottom: 3vh;
+}
+#StoryHeaderHelper{
+    position: absolute;
+    margin-bottom: 70vh;
+}
+#StoryButton:hover{
+    cursor: pointer;
+    transition: 0.3s all;
+    background-color: #4a86ed;
+}
+@media(max-width: 480px){
+    #StoryButton{
+        width: 25vw;
+    }
+    .StoryInput{
+        width: 40vw;
+    }
+    #StoryHeaderHelper{
+        font-size: 1.2rem;
+        margin-bottom: 15vh;
+        text-align: center;
+        bottom: 0;
+    }
+}
+@media (max-width: 375px){
+    .StoryHeader:first-child{
+        margin-bottom: 2vh;
+    }
+}
