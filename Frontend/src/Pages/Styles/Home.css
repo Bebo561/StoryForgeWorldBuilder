@@ -10,6 +10,9 @@
     justify-content: center;
     align-items: center;
 }
+#HomeLoading{
+    color: black;
+}
 @media(max-width: 480px){
     #HomeBG{
         height: 100vh;

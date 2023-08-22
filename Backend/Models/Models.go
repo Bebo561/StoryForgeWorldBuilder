@@ -1,10 +1,13 @@
 package Models
 
-import (
+/*import (
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
+*/
 
-type User struct {
-	Email string `json:"email" bson:"email"`
-
+//Request structure for the name generator
+type NameRequest struct {
+	Race string `json: "text"`
+	Queries string `json: "text"`
 }
+
